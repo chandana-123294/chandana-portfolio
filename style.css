@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0e0e0e;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 span {
+  color: #a855f7; /* Purple */
+}
+
+p {
+  font-size: 1.2rem;
+  color: #cfcfcf;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
